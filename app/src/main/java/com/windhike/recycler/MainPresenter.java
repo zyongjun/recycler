@@ -1,11 +1,12 @@
 package com.windhike.recycler;
 
-import com.windhike.library.RecyclerPresenter;
+
+import com.windhike.recyclerutils.RecyclerPresenter;
 
 /**
  * Created by Administrator on 2016/10/7 0007.
  */
-public class MainPresenter extends RecyclerPresenter{
+public class MainPresenter extends RecyclerPresenter {
 
     public MainPresenter() {
         registViewTemplate(1,SearchHolder.class);

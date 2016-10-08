@@ -1,11 +1,11 @@
 package com.windhike.recycler;
 
-import com.windhike.library.SimpleRecyclerAdapter;
+import com.windhike.recyclerutils.SimpleRecyclerAdapter;
 
 /**
  * Created by Administrator on 2016/10/8 0008.
  */
-public class SimpleMainAdapter extends SimpleRecyclerAdapter{
+public class SimpleMainAdapter extends SimpleRecyclerAdapter {
 
     public SimpleMainAdapter() {
         registViewTemplate(1,SimpleSearchHolder.class);

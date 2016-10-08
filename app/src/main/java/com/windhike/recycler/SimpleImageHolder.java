@@ -3,10 +3,8 @@ package com.windhike.recycler;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.windhike.library.HolderLayout;
-import com.windhike.library.RecyclerHolder;
-import com.windhike.library.SimpleRecyclerAdapter;
-import com.windhike.library.SimpleRecyclerHolder;
+import com.windhike.recyclerutils.HolderLayout;
+import com.windhike.recyclerutils.SimpleRecyclerHolder;
 
 /**
  * Created by Administrator on 2016/10/7 0007.

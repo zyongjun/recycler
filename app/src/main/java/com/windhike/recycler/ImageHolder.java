@@ -3,14 +3,14 @@ package com.windhike.recycler;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.windhike.library.HolderLayout;
-import com.windhike.library.RecyclerHolder;
+import com.windhike.recyclerutils.HolderLayout;
+import com.windhike.recyclerutils.RecyclerHolder;
 
 /**
  * Created by Administrator on 2016/10/7 0007.
  */
 @HolderLayout(R.layout.holder_img)
-public class ImageHolder extends RecyclerHolder<MainPresenter>{
+public class ImageHolder extends RecyclerHolder<MainPresenter> {
     private ImageView mIvImg;
     public ImageHolder(View itemView) {
         super(itemView);

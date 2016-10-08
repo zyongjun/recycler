@@ -1,4 +1,4 @@
-package com.windhike.library;
+package com.windhike.recyclerutils;
 
 import android.support.annotation.LayoutRes;
 

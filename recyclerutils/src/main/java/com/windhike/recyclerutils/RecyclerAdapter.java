@@ -1,7 +1,8 @@
-package com.windhike.library;
+package com.windhike.recyclerutils;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
+
 
 /**
  * Created by gzzyj on 2016/9/29.
