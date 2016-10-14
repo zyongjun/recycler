@@ -33,4 +33,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder>{
     public int getItemCount() {
         return mPresenter.getItemCount();
     }
+
+    protected RecyclerPresenter getPresenter() {
+        return mPresenter;
+    }
 }
