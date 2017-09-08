@@ -1,30 +1,30 @@
 ###### recycler
-simple utils to recyclerview with presenter or not
+presenter+viewholder即可实现任意复杂的列表界面，mvp模式下简化multi item recyclerview的使用方式，只需要专注于presenter的编写
 
 
-##### Add it
+##### 添加到你的项目
 
-Step 1. Add the JitPack repository to your build file
+Step 1. 添加JitPack源地址到build file
 Add it in your root build.gradle at the end of repositories:
 
 ```java
 allprojects {
-		repositories {
-			...
-			maven { url "https://jitpack.io" }
-		}
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
 	}
+   }
 ```
 
-Step 2. Add the dependency
+Step 2. 依赖包地址
 ```
 dependencies {
-	        compile 'com.github.zyongjun:recycler:v0.0.4'
+	      compile 'com.github.zyongjun:recycler:v0.0.4'
 	}
 ```
 
-##### How to use
-- simple RecyclerViewHolder
+##### 如何使用
+- **ViewHolder**: 继承 RecyclerViewHolder使用presenter泛型绑定你的item,item布局只需要使用注解直接声明即可
 ```
 @HolderLayout(R.layout.item_bench_corp)  // layout of viewtype
 public class WorkCorpHolder extends BindRecyclerHolder<WorkBenchPresenter>{
@@ -35,8 +35,8 @@ public class WorkCorpHolder extends BindRecyclerHolder<WorkBenchPresenter>{
 }
 ```
 
-- presenter
-you can simple extends RecyclerPresenter with overide
+- **presenter**:
+继承 RecyclerPresenter 并复写以下两个方法
 ```
    public abstract int getItemViewType(int var1);
 
@@ -44,8 +44,7 @@ you can simple extends RecyclerPresenter with overide
 ```
 or extends a BaseRecyclerPresenter include basic Mvp Presenter lifecycle method.
 
-
-you don't need to write an adapter , what you need to do is to implement you presenter
+不需要实现Adapter只需要把presenter注入默认的RecyclerAdapter中 , presenter实现逻辑请参照上一步。
 ```
   mPresenter = new WorkBenchPresenter();
   mPresenter.attach(this);
